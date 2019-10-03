@@ -57,3 +57,56 @@ body {
     display: block;
     text-align: center;
 }
+
+.logo img {
+    width: 75px;
+    transition: all .3s;
+}
+
+.logo:hover img {
+    transform: rotate(720deg) scale(.5);
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px 15px 10px 45px;
+    font: 16px Mija, sans-serif;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: all .3s;
+
+    /*font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: Mija;*/
+}
+
+.search input:focus {
+    box-shadow: inset 0 0 10px 0 rgba(150, 0, 0, 0.8);
+}
+
+.search button {
+    background: url('../images/search.svg') no-repeat center center;
+
+    /*background-color: #fff;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center center;*/
+
+    background-size: cover;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
